@@ -1,0 +1,753 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #14131a;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    overflow-x: hidden;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #7e7e7e;
+    text-decoration: none;
+}
+
+
+button{
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #14131a;
+  }
+
+::-webkit-scrollbar-thumb {
+    border-radius: 24px;
+    background-color: #1c1b23;
+  }
+  
+
+#container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin:0 0 0 20px;
+}
+
+#menuSect{
+    display: flex;
+    flex-direction: column;
+    width: 20.55%;
+    margin-right: 2%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 590px;
+    padding-top: 12px;
+   
+}
+
+.roundBtnBox{
+    display: flex;
+    flex-direction: row;
+    padding:8px 12px 20px 16px;
+    
+}
+
+.btnRound{
+    background-color: #2bd576;
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    border: none;
+    margin: 0 4px;
+}
+#menuBox{
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1b23;
+    border-radius: 8px;
+    padding:16px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    color: #7e7e7e;
+}
+#menuBox i{
+    margin-right: 10px;
+}
+
+#menuBox p{
+    padding:10px 20px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#menuBox p:hover{
+    padding-top:6px;
+}
+.genBtn a:hover{
+    color: #2bd576;
+}
+
+h4{
+    margin: 0;
+    padding: 0;
+}
+.subHead{
+    padding: 10px 4px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#instagram{-webkit-text-stroke: 0.5px red;}
+#linkedIn{color:rgb(3, 138, 192);}
+#medium{color:gold;}
+#gitHub{color:cyan;}
+#instBtn:hover{color:red;}
+#lnkBtn:hover{color: rgb(3, 138, 192);}
+#gitBtn:hover{ color:cyan}
+#medBtn:hover{color: gold;}
+
+@media screen and (min-width:320px){
+   #menuBox p{
+    font-size:12px;
+   }
+
+}
+
+@media screen and (min-width:1024px){
+    #menuBox p{
+     font-size:16px;
+    }
+
+    #socialPanel p{
+        display: block;
+    }
+ }
+
+#bodySect{
+    width: 80%;
+}
+#headBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 19px 5% 24px 0;
+    background-color: #14131a;
+    /* box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; */
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.btnGen{
+    border: none;
+    padding:10px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #dbdbdb;
+    cursor: pointer;
+}
+.btnGen i{
+    margin-left: 4px;
+}
+
+#btnMenu{
+    background-color:transparent;
+    font-size: 18px;
+    display:none;
+    color: #7e7e7e;
+}
+
+#btnContact{
+    background-color: #2bd5758c;
+}
+
+
+@media screen and (min-width:320px) and (max-width:768px){
+    #menuSect{
+        display:none;
+    }
+    #bodySect{
+        width: 100%;
+    }
+    #btnMenu{
+        display: block;
+    }
+    
+    #container{
+        margin:0;
+    }
+    #socialPanel p{
+        display: none;
+    }
+}
+
+#bodyContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+#heroCard{
+    width: 100%;
+    height: 170px;
+    margin-top: 4px;
+    background:url(src/img/cover.jpeg);
+}
+
+#heroVertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    backdrop-filter: blur(12px);
+
+}
+
+#heroHorizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 32px;
+}
+
+#photo{
+    background-color: #efaa12;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border-radius:100%;
+    border: 4px solid white;
+    background-size:cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    font-size: 72px;
+    color: rgb(11, 31, 48);
+}
+
+#heroLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#namePanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 32px;
+    color: white;
+}
+
+
+.name{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.socialHandle{
+    font-size: 13px;
+    font-weight: 100;
+}
+
+#heroRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#socialPanel{
+    background-color:#1c1b23;
+    height: 20px;
+    margin: 0;
+    padding: 10px 10px 12px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    color: #7e7e7e;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#socialPanel p{
+    font-size: 13px;
+    font-weight:600;
+    padding-top: 2px;
+    padding-right: 5px;
+}
+
+#socialPanel i{
+    margin-right: 6px;
+    font-size: 24px;
+}
+
+.subSection{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 0 36px;
+}
+
+.subHeading{
+    color: rgb(233, 233, 233);
+    font-size:18px;
+    font-weight: 600;
+    padding: 12px 5px;
+}
+
+.cardHolder{
+    padding:0;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projectCard{
+    display: flex;
+    flex-flow: column;
+    height: 190px;
+    background-color: white;
+    margin: 12px;
+    width: 22%;
+    border-radius: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #1c1b23;
+    transition: all 0.2s ease-in-out;
+    border: none;
+}
+
+.projectCard:hover{
+    transform: scale(1.01);
+}
+
+.displayCard{
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 9.5px;
+    border-top-right-radius: 9.5px;
+}
+
+#project1{
+    background: url(src/img/tim-schmidbauer-WrzQjl5YVQ8-unsplash.jpg);
+    background-size: contain;
+}
+#project2{
+    background: url(src/img/blogging-guide-K5DY18hy5JQ-unsplash.jpg);
+    background-size: contain;
+}
+#project3{
+    background: url(src/img/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg);
+    background-size: contain;
+}
+#project4{
+    background: url(src/img/steve-johnson-5Oe8KFH5998-unsplash.jpg);
+    background-size: contain;
+}
+.content{
+    padding: 12px;
+}
+.projectTitle{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:320px) and (max-width:768px){
+    .projectCard{
+        width: 82% !important;
+    }
+    .subSection{
+        margin: 24px 0 0 12px;
+    }
+
+    .skillCard{
+        width:90% !important;
+    }
+
+    .formContainer{
+        width: 100% !important;
+    }
+
+    .detailsContainer{
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .projectCard{
+        width: 46% !important;
+    }
+
+    .skillCard{
+        width:48% !important;
+    }
+
+    .skillCardHolder{
+        justify-content: flex-start !important;
+    }
+
+    .cardHolder{
+        justify-content: flex-start !important;
+    }
+}
+@media screen and (min-width:1024px){
+    .projectCard{
+        width: 22% !important;
+    }
+
+    .cardHolder{
+        flex-wrap: nowrap;
+    }
+
+    .skillCard{
+        width:15% !important;
+    }
+}
+
+.skillCardHolder{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 12px;
+    margin-right: 10px;
+    padding-bottom: 12px;
+}
+
+.skillCard{
+    display: flex;
+    flex-flow: column;
+    background-color: #1c1b23;
+    width: 15%;
+    border-radius: 6px;
+    padding:8px 12px;
+    margin:6px;
+}
+
+.subSectionHeading{
+    color: #8b8a91;
+    font-size: 18px;
+    font-weight:500;
+    margin: 5px;
+}
+
+.skillContainer{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 8px;
+}
+
+.skillTab{
+    background-color:#14131a;
+    padding: 8px;
+    font-size: 10px;
+    border-radius: 6px;
+    color: #8b8a91;
+    margin:5px;
+}
+
+#blueBorder{
+    border: 1px solid rgb(69, 69, 255);
+}
+
+#purpleBorder{
+    border: 1px solid purple;
+}
+
+#yellowBorder{
+    border: 1px solid rgb(255, 255, 63);
+}
+
+#whiteBorder{
+    border: 1px solid white;
+}
+
+#greenBorder{
+    border: 1px solid green;
+}
+
+#redBorder{
+    border: 1px solid red;
+}
+
+#lightGreenBorder{
+    border: 1px solid greenyellow;
+}
+
+#lightBlueBorder{
+    border: 1px solid rgb(104, 162, 255);
+}
+
+#skyBlueBorder{
+    border: 1px solid rgb(0, 255, 255);
+}
+#orangeBorder{
+    border: 1px solid orange;
+}
+#pinkBorder{
+    border: 1px solid rgb(255, 85, 113);
+}
+.credits{
+    color: white;
+    font-size: 12px;
+    align-self: flex-end;
+    margin: 2px 18px;
+    padding: 4px;
+}
+
+.redColor{
+    color: red;
+}
+
+.aboutContent{
+    background-color: #1c1b23;
+    margin: 12px 12px 5px 0;
+    padding:30px  20px;
+    border-radius: 6px;
+   transition: all 0.4s ease-in-out;
+   transform:rotate(-2deg);
+}
+.aboutContent:hover{
+    transform:rotate(0deg);
+}
+.aboutText{
+    color:#8b8a91;
+    font-size: 14px;
+}
+.timelineContainer{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+}
+
+#timeline{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.line{
+    width: 8px;
+    background-color: rgba(217, 255, 0, 0.749);
+    border-radius: 6px;
+    animation-name: lineFlow;
+    animation-duration: 4s;
+}
+
+#timeline>div{
+    margin: 0;
+}
+
+.instCard{
+    background-color:#1c1b23;
+    margin: 4px 12px 12px 12px;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #8b8a91;
+    font-size: 12px;
+    border-radius: 3px;
+    animation-name: instCardFlow;
+    animation-duration: 4s;
+    transition: all 0.4s ease-in-out;
+}
+
+#vit:hover{
+    box-shadow: 0px 0px 2px 1px rgb(104, 255, 119);
+}
+#ihs:hover{
+    box-shadow: 0px 0px 2px 1px rgb(249, 54, 249);
+}
+#bbps:hover{
+    box-shadow: 0px 0px 2px 1px rgb(255, 117, 140);
+}
+#dps:hover{
+    box-shadow: 0px 0px 2px 1px rgb(104, 162, 255);
+}
+
+.instName{
+    color:#dbdbdb;
+    font-size: 16px;
+    padding: 0 0 6px 0;
+    font-weight: bold;
+}
+
+.blankCard{
+    background-color: #14131a;
+    box-shadow: none;
+}
+
+
+.blankCard .instName{
+    color: #14131a;
+}
+
+.edContent{
+    transform: none !important;
+    transition: none;
+}
+
+@keyframes instCardFlow {
+    from{
+        transform: translateY(2000px);
+        opacity:0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes lineFlow {
+    from{
+        transform: translateX(2000px);
+        opacity:0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#touchContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+    width: 55%;
+}
+
+.noWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.noWrap input{
+    width: 100%;
+}
+
+.formContainer input{
+    padding: 12px;
+    margin: 3px;
+    outline: none;
+    font-size: 12px;
+    color: rgb(11, 31, 48);
+}
+
+#inputSubject, #inputMessage{
+    width: 100%;
+}
+
+#inputMessage{
+    height: 120px;
+    margin:3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    padding: 12px;
+    font-size: 12px;
+    resize: none;
+    color: rgb(11, 31, 48);
+}
+
+#btnTouch{
+    width: 100%;
+    margin: 3px;
+    padding: 12px;
+    background-color:#2bd5758c;
+    border-radius: 6px;
+}
+
+.detailsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 37%;  
+}
+
+
+.detailCard{
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 6px;
+    padding: 12px 16px;
+    background-color: #1c1b23;
+    color: #8b8a91;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer ;
+    width: 240px;
+}
+
+.detailCard:hover{
+    animation-name: flip ;
+    animation-duration: 1s;
+}
+
+@keyframes flip {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.logoRound{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 0 ;
+    color: #1c1b23;
+}
+
+.detailContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5px 0 12px;
+    font-size:12px;
+}
+
+.detailHead{
+    font-size: 16px;
+    font-weight: bold;
+    color: #dbdbdb
+}

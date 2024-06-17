@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ez Resume</title>
+    <link rel="icon" href="src/img/favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div id="container">
+        <div id="menuSect">
+            <div class="roundBtnBox">
+                <button class="btnRound"></button>
+                <button class="btnRound"></button>
+                <button class="btnRound"></button>
+            </div>
+            <div id="menuBox">
+                <p class="genBtn"><a href="/index.html"><i class="fa-solid fa-tv fa-flip"></i> Home</a></p>
+                <p class="genBtn"><a href="/about.html"><i class="fa-solid fa-person"></i> About</a></p>
+                <p class="genBtn"><a href="/education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a></p>
+                <p class="genBtn"><a href="/index.html"><i class="fa-solid fa-award"></i> Achievements</a></p>
+                <p class="genBtn"><a href="/getInTouch.html"><i class="fa-regular fa-handshake"></i> Get In Touch</a></p>
+                <h4 class="subHead">Socials</h4>
+                <a href="https://www.instagram.com/rajat_blessed"><p id="instBtn"><i class="fa-brands fa-instagram" id="instagram"></i> Instagram </p></a>
+                <a href="https://www.linkedin.com/in/rajat-agrawal-36812024a"><p id="lnkBtn"><i class="fa-brands fa-linkedin-in" id="linkedIn"></i> LinkedIn</p></a>
+                <a href="https://github.com/rajat-agrawal24/"><p id="gitBtn"><i class="fa-brands fa-github" id="gitHub"></i> Github</p></a>
+                <a href="https://medium.com/@tamvit23/from-infancy-to-mastery-unleashing-the-power-of-pre-trained-models-in-ai-ccd509ff7429"><p id="medBtn"><i class="fa-brands fa-medium" id="medium"></i>Medium</p></a>
+            </div>
+        </div>
+        <div id="bodySect">
+            <div id="headBar">
+                <button class="btnGen" id="btnContact" onclick="contact()">Contact Me <i class="fa-solid fa-user"></i> </button>
+                <button class="btnGen" id="btnMenu"><i class="fa-solid fa-bars"></i> </button>
+            </div>
+            <div id="bodyContainer">
+                <div id="heroCard">
+                    <div id="heroVertical">
+                        <div id="heroHorizontal">
+                            <div id="heroLeft">
+                                <div id="photo">
+                                    <i class="fa-brands fa-linux"></i>
+                                </div>
+                                <div id="namePanel">
+                                    <p class="name">Rajat Agrawal</p>
+                                    <p class="socialHandle">@pandtech</p>
+                                </div>
+                            </div>
+                            <div id="heroRight">
+                                <div id="socialPanel" onclick="insta()">
+                                    <i class="fa-brands fa-instagram"></i><p>Follow me on Instagram</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subSection">
+                    <p class="subHeading">Projects</p>
+                    <div class="cardHolder">
+                        <div class="projectCard">
+                            <div class="displayCard" id="project1"></div>
+                            <div class="content"><p class="projectTitle">VITask</p>
+                            <p>Android, Fiebase, JSON, Java, Figma, XML, Other Scripting Languages</p>
+                            </div>
+                        </div>
+                        <div class="projectCard">
+                            <div class="displayCard" id="project2"></div>
+                            <div class="content"><p class="projectTitle">Cashflow</p>
+                            <p>Visual Basic, .NET Framework, Figma, Canva Design, Microsoft Access, Azure Development Studio</p>
+                            </div>
+                        </div>
+                        <div class="projectCard">
+                            <div class="displayCard" id="project3"></div>
+                            <div class="content"><p class="projectTitle">ic-ETITE'24</p>
+                            <p>HTML, CSS, Javascript, Responsive Web Design, Media Query</p>
+                            </div>
+                        </div>
+                        <div class="projectCard">
+                            <div class="displayCard" id="project4"></div>
+                            <div class="content"><p class="projectTitle">Portfolio 1.0</p>
+                            <p>HTML, CSS, Javascript, Responsive Web Design, Media Query</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subSection">
+                    <p class="subHeading">What I Know</p>
+                    <div class="skillCardHolder">
+                        <div class="skillCard">
+                            <p class="subSectionHeading" >Frontend</p>
+                            <div class="skillContainer">
+                                <p class="skillTab">HTML</p>
+                                <p class="skillTab">CSS</p>
+                                <p class="skillTab" id="yellowBorder">Javascript</p>
+                                <p class="skillTab" id="blueBorder">React Js</p>
+                                <p class="skillTab">React Native</p>
+                                <p class="skillTab">XML</p>
+                                <p class="skillTab">Tailwind</p>
+                                <p class="skillTab" id="purpleBorder">Bootstrap</p>
+                            </div>
+                        </div>
+                        <div class="skillCard">
+                            <p class="subSectionHeading" >Backend</p>
+                            <div class="skillContainer">
+                                <p class="skillTab">php</p>
+                                <p class="skillTab" id="lightGreenBorder">Node Js</p>
+                                <p class="skillTab">Javascript</p>
+                                <p class="skillTab">MySQL</p>
+                                <p class="skillTab" id="redBorder">Oracle</p>
+                                <p class="skillTab">ABAP</p>
+                                <p class="skillTab">HANA</p>
+                                <p class="skillTab">SAP</p>
+                                <p class="skillTab">SQL Server Management</p>
+                                <p class="skillTab" id="whiteBorder">Azure Studio</p>
+                                <p class="skillTab">Schema Authentication</p>
+                            </div>
+                        </div>
+                        <div class="skillCard">
+                            <p class="subSectionHeading" >Technologies</p>
+                            <div class="skillContainer">
+                                <p class="skillTab">C</p>
+                                <p class="skillTab">C++</p>
+                                <p class="skillTab">Java</p>
+                                <p class="skillTab">Python</p>
+                                <p class="skillTab" id="greenBorder">Android</p>
+                                <p class="skillTab" id="lightBlueBorder">Kotlin</p>
+                                <p class="skillTab">Visual Basic</p>
+                                <p class="skillTab">.NET Framework</p>
+                                <p class="skillTab">Regression Analysis</p>
+                            </div>
+                        </div>
+                        <div class="skillCard">
+                            <p class="subSectionHeading" >Design</p>
+                            <div class="skillContainer">
+                                <p class="skillTab" id="orangeBorder">Figma</p>
+                                <p class="skillTab">Adobe Studio</p>
+                                <p class="skillTab" id="skyBlueBorder">Canva</p>
+                                <p class="skillTab">Vectors</p>
+                                <p class="skillTab">Video Editing</p>
+                                <p class="skillTab">XML</p>
+                            </div>
+                        </div>
+                        <div class="skillCard">
+                            <p class="subSectionHeading" >Work Experience</p>
+                            <div class="skillContainer">
+                                <p class="skillTab">Bulls And Bears</p>
+                                <p class="skillTab">SIAM</p>
+                                <p class="skillTab">MySAP Labs</p>
+                                <p class="skillTab" id="pinkBorder">Programme Rep.</p>
+                                <p class="skillTab">Freelancer</p>
+                                <p class="skillTab">Headboy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="credits">Designed with <i class="fa-solid fa-heart redColor"></i></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function contact(){
+        window.location.href="./getInTouch.html";
+    }
+
+    function insta(){
+        window.location.href="https://www.instagram.com/rajat_blessed";
+    }
+</script>
+<script src="https://kit.fontawesome.com/ed9ef1a521.js" crossorigin="anonymous"></script>
+</html>
