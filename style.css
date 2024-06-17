@@ -205,7 +205,7 @@ h4{
     width: 100%;
     height: 170px;
     margin-top: 4px;
-    background:url(src/img/cover.jpeg);
+    background:url(./src/img/cover.jpeg);
 }
 
 #heroVertical{
@@ -347,19 +347,19 @@ h4{
 }
 
 #project1{
-    background: url(src/img/tim-schmidbauer-WrzQjl5YVQ8-unsplash.jpg);
+    background: url(./src/img/tim-schmidbauer-WrzQjl5YVQ8-unsplash.jpg);
     background-size: contain;
 }
 #project2{
-    background: url(src/img/blogging-guide-K5DY18hy5JQ-unsplash.jpg);
+    background: url(./src/img/blogging-guide-K5DY18hy5JQ-unsplash.jpg);
     background-size: contain;
 }
 #project3{
-    background: url(src/img/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg);
+    background: url(./src/img/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg);
     background-size: contain;
 }
 #project4{
-    background: url(src/img/steve-johnson-5Oe8KFH5998-unsplash.jpg);
+    background: url(./src/img/steve-johnson-5Oe8KFH5998-unsplash.jpg);
     background-size: contain;
 }
 .content{
