@@ -29,7 +29,7 @@
         </div>
         <div id="bodySect">
             <div id="headBar">
-                <button class="btnGen" id="btnContact" onclick="contact()">Contact Me <i class="fa-solid fa-user"></i> </button>
+                <button class="btnGen" id="btnContact" onclick="download()">Resume <i class="fa-solid fa-download"></i> </button>
                 <button class="btnGen" id="btnMenu"><i class="fa-solid fa-bars"></i> </button>
             </div>
             <div id="bodyContainer">
@@ -95,8 +95,15 @@
     </div>
 </body>
 <script>
-    function contact(){
-        window.location.href="./getInTouch.html";
+    function download(){
+        const fileUrl = './Resume_detailed.pdf'; 
+        const fileName = 'Rajat_agrawal_Resume.pdf';
+        const a = document.createElement('a');
+        a.href = fileUrl;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
     }
 
     function insta(){
